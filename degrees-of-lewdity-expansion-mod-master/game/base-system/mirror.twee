@@ -1144,6 +1144,34 @@ If your Trauma gets too high, you will no longer be able to hide them.
 	<</if>>
 	<br>
 <</if>>
+
+/*noeinan mod START*/
+/*Added new Fox Transformation*/
+
+<<if $fox gt 1>>
+	__Fox__
+	<br>
+	<<if $transformationParts.fox.ears isnot "disabled">>
+		Fox Ears:
+		<<listbox "$transformationParts.fox.ears" autoselect>>
+			<<option "Hide" "hidden">>
+			<<option "Default" "default">>
+		<</listbox>>
+		<br>
+	<</if>>
+	<<if $transformationParts.fox.tail isnot "disabled">>
+		Fox Tail:
+		<<listbox "$transformationParts.fox.tail" autoselect>>
+			<<option "Hide" "hidden">>
+			<<option "Default" "default">>
+		<</listbox>>
+		<br>
+	<</if>>
+	<br>
+<</if>>
+
+/*noeinan mod END*/
+
 <<link [[Confirm|$passage]]>>
 	<<set $mirrorMenu to "transformation">>
 <</link>>

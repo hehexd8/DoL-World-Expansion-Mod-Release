@@ -2601,6 +2601,15 @@
 			<img class="layer-backhair colour-hair" @src="'img/transformations/cat/tail/'+$transformationParts.cat.tail+'.png'">
 		<</if>>
 
+		/*noeinan mod START*/
+		/*Added new Fox Transformation*/
+
+		<<if !_disabled.includes($transformationParts.fox.tail)>>
+			<img class="layer-backhair colour-hair" @src="'img/transformations/fox/tail/'+$transformationParts.fox.tail+'.png'">
+		<</if>>
+
+		/*noeinan mod END*/
+
 		<<if !_disabled.includes($transformationParts.wolf.ears)>>
 			<img class="layer-backhair colour-hair" @src="'img/transformations/wolf/ears/'+$transformationParts.wolf.ears+'.png'">
 		<</if>>
@@ -2616,6 +2625,15 @@
 		<<if !_disabled.includes($transformationParts.cat.ears)>>
 			<img class="layer-backhair colour-hair" @src="'img/transformations/cat/ears/'+$transformationParts.cat.ears+'.png'">
 		<</if>>
+
+		/*noeinan mod START*/
+		/*Added new Fox Transformation*/
+
+		<<if !_disabled.includes($transformationParts.fox.ears)>>
+			<img class="layer-backhair colour-hair" @src="'img/transformations/fox/ears/'+$transformationParts.fox.ears+'.png'">
+		<</if>>
+
+		/*noeinan mod END*/
 
 		<<if !_disabled.includes($transformationParts.demon.horns)>>
 			<img class="layer-horns" @src="'img/transformations/demon/horns/'+$transformationParts.demon.horns+'.png'">
